@@ -1,0 +1,140 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+/* --------------------
+top-banner styles
+---------------------- */
+.top-banner-container{
+    background-color:#161616;
+    width: 80%;
+    margin: 0 8%;
+    border-radius: 30px;
+    padding: 20px 30px 0px 30px;
+   
+}
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.banner-content{
+    width: 50%;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.banner-title{
+    color:  #FFFFFF;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 2%;
+    padding: 0%;
+}
+.banner-paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    color:  #FFFFFF;
+    margin-bottom: 50px;
+}
+.banner-content a{
+    text-decoration: none;
+    background-color:  #DD0000;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    
+}
+.fa-solid,.fa-right{
+    color: white;
+
+}
+.banner-img{
+    height: 100%;
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+.banner-img >img{
+ height: 100%;
+ width: 100%;
+}
+/* top banner styles end */
+
+/* --------------------
+blog section styles
+--------------------- */
+.blog-section{ 
+    width: 100%;
+    margin-top: 80px;
+    /* margin-left: 8%; */
+}
+.blog-container{
+    display: flex;
+    justify-content: space-around;
+}
+.navigation-buttons{
+    background-color: #161616;
+    width: 220px;
+    height: 220px;
+    padding: 20px ;
+    border-radius: 10px;
+}
+.nav-links-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nav-links{
+margin: 10px 5px;
+background-color: #FFFFFF;
+padding: 10px;
+border-radius: 10px;
+text-align: center;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+}
+.players-blog{
+    /* flex-grow: 1; */
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+}
+.live-match{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.live-match-img{
+    height: 175px;
+    width: 312px;
+}
+.live-match-img>img{
+    height: 100%;
+    width: 100%;
+}
+.match-detailes{
+    margin: 15px 20px;
+}
+.transfers{
+    color: #161616;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+.match-title{
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+
+}
+.live-duration>span{
+    padding: 10px;
+    margin-right: 25px;
+}
