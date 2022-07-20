@@ -40,13 +40,15 @@ top-banner styles
     color:  #FFFFFF;
     margin-bottom: 50px;
 }
-.banner-content a{
+.common-button{
     text-decoration: none;
     background-color:  #DD0000;
     color: white;
-    padding: 16px 25px;
+    padding: 16px 35px;
     border-radius: 5px;
-    
+} 
+.animated-button{
+    animation: focused-btn 2s ease .2s infinite alternate;
 }
 .fa-solid,.fa-arrow-right{
     color: white;
@@ -73,7 +75,8 @@ players blog section styles
 }
 .blog-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-left: 50px;
     
 }
 .navigation-buttons{
@@ -114,27 +117,56 @@ players blog section styles
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
 }
 .live-match{
-    width: 312px;
-    height: 362px;
+    width: 300px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 
 }
+.live-watch{
+    height:250px;
+}
 .live-match-img{
     height: 175px;
-    width: 312px;
+    width: 100%
     
+}
+.flags{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.versus{
+    font-size: 26px;
+    font-weight: 700;
 }
 .live-match-img>img{
     height: 100%;
     width: 100%; 
 }
 .match-detailes{
-    margin: 15px 20px;
+    padding: 10px 15px;
 }
+.teams{
+    color: #161616;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+   
+}
+.match-date{ 
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
 .transfers{
     color: #161616;
     font-weight: 700;
@@ -153,6 +185,14 @@ players blog section styles
 }
 
 /* players blog section styles end */
+
+/* hidden button style */
+.hidden-button{
+    margin-top: 80px;
+    text-align: center;
+    display: none;
+}
+/* hidden button style end */
 
 /* footer styles */
 
@@ -191,3 +231,19 @@ players blog section styles
 }
 
 /* footer styles end */
+
+/* animated-button's animation styles */
+@keyframes focused-btn {
+    0% {
+        box-shadow: 3px 2px 4px 1px white;  
+        background-color: Red;
+        color: white;
+       
+}
+
+100%{
+    box-shadow: 3px 2px 4px 1px blue;  
+    background-color: goldenrod;
+    color: white;
+}
+}
