@@ -1,7 +1,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
+    padding: 0%;
 }
 /* --------------------
 top-banner styles
@@ -30,7 +31,7 @@ top-banner styles
     color:  #FFFFFF;
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 2%;
+    margin: 0%;
     padding: 0%;
 }
 .banner-paragraph{
@@ -47,7 +48,7 @@ top-banner styles
     border-radius: 5px;
     
 }
-.fa-solid,.fa-right{
+.fa-solid,.fa-arrow-right{
     color: white;
 
 }
@@ -63,7 +64,7 @@ top-banner styles
 /* top banner styles end */
 
 /* --------------------
-blog section styles
+players blog section styles
 --------------------- */
 .blog-section{ 
     width: 100%;
@@ -73,6 +74,7 @@ blog section styles
 .blog-container{
     display: flex;
     justify-content: space-around;
+    
 }
 .navigation-buttons{
     background-color: #161616;
@@ -87,11 +89,15 @@ blog section styles
     padding: 5px;
 }
 .nav-links{
-margin: 10px 5px;
-background-color: #FFFFFF;
-padding: 10px;
-border-radius: 10px;
-text-align: center;
+    margin: 10px 5px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#blog-focus{
+    background-color: #DD0000;
+   color: #FFFFFF;
 }
 .nav-links a{
     text-decoration: none;
@@ -100,24 +106,31 @@ text-align: center;
     color:black;
 }
 .players-blog{
-    /* flex-grow: 1; */
+    flex-grow: 1; 
+    margin-left: 2%;
 }
+
+/* players-blog grid styles */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:20px;
 }
 .live-match{
+    width: 312px;
+    height: 362px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+
 }
 .live-match-img{
     height: 175px;
     width: 312px;
+    
 }
 .live-match-img>img{
     height: 100%;
-    width: 100%;
+    width: 100%; 
 }
 .match-detailes{
     margin: 15px 20px;
@@ -138,3 +151,43 @@ text-align: center;
     padding: 10px;
     margin-right: 25px;
 }
+
+/* players blog section styles end */
+
+/* footer styles */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    margin-top: 60px;
+    padding: 10px 60px;
+}
+.flex-container h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.flex-container hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+.footer-terms>span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    padding: 10px;
+    
+}
+.social-icons{
+    margin-top: 30px;
+}
+.s-icons{
+    color: white;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+/* footer styles end */
