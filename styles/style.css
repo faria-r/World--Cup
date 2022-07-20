@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 30px 0 0 0;
+    margin:0;
     padding: 0%;
 }
 /* --------------------
@@ -10,10 +10,9 @@ top-banner styles
 .top-banner-container{
     background-color:#161616;
     width: 80%;
-    margin: 0 8%;
+    margin: 5% 8%;
     border-radius: 30px;
-    padding: 20px 30px 0px 30px;
-   
+    padding: 20px 30px 0px 30px;   
 }
 .top-banner{
     display: flex;
@@ -25,7 +24,6 @@ top-banner styles
     padding-bottom: 40px;
     padding-left: 40px;
 }
-
 .banner-title{
     color:  #FFFFFF;
     font-size: 60px;
@@ -45,6 +43,7 @@ top-banner styles
     color: white;
     padding: 16px 35px;
     border-radius: 5px;
+    display: inline-block;
 } 
 .animated-button{
     animation: focused-btn 2s ease .2s infinite alternate;
@@ -53,14 +52,11 @@ top-banner styles
     color: white;
 
 }
-.banner-img{
-    height: 100%;
-    margin-top: 10px;
-    padding-bottom: 0;
-}
 .banner-img >img{
- height: 100%;
- width: 100%;
+    display: inline-block;
+    margin-bottom:-46px;
+    height: 100%;
+    width: 100%;
 }
 /* top banner styles end */
 
@@ -69,14 +65,12 @@ players blog section styles
 --------------------- */
 .blog-section{ 
     width: 100%;
-    margin-top: 80px;
-    /* margin-left: 8%; */
+    margin-top: 100px;
 }
 .blog-container{
     display: flex;
-    justify-content: center;
-    padding-left: 50px;
-    
+    justify-content: space-around;
+   padding: 0 40px 10px 50px;
 }
 .navigation-buttons{
     background-color: #161616;
@@ -122,10 +116,9 @@ players blog section styles
 }
 .live-match{
     width: 300px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid #E8E8E8; 
     border-radius: 10px;
     box-shadow: 2px 3px 4px 3px gray;
-
 }
 .live-watch{
     height:250px;
@@ -211,9 +204,10 @@ players blog section styles
     font-weight: 600;
     color: white;
 }
-.flex-container hr{
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 50px;
+
+.footer-terms{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
 }
 .footer-terms>span{
     font-weight: 500;
@@ -248,12 +242,13 @@ players blog section styles
     color: white;
 }
 }
-
 /* animation end */
+
+
 /* -----------------------------------
 Media Query  for tablet veiw
 ---------------------------------*/
-@media screen  and (max-width:768px) {
+ @media screen  and (max-width:768px) {
     .top-banner-container{
         background-color:#161616;
         width: 90%;
@@ -280,7 +275,7 @@ Media Query  for tablet veiw
         text-overflow: ellipsis;
     }
     .banner-img{
-        margin-top: 60px;
+        margin-bottom:-93px;
     }
     .blog-container{
         display: flex;
@@ -289,7 +284,6 @@ Media Query  for tablet veiw
     .navigation-buttons{
         width:100%;
         height: 90px;
-        border-radius: 10px;
         padding: 0%;
         margin-bottom: 40px;
         background-color: #FFFFFF;
@@ -299,6 +293,86 @@ Media Query  for tablet veiw
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    .nav-links{
+        margin-right: 10px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hidden-button{
+        display: block;
+    }
+    .footer-terms{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 
+/* -----------------------------------
+Media Query  for tablet veiw end
+---------------------------------*/
+
+/* -----------------------------------
+Media Query  for Mobile veiw
+---------------------------------*/
+@media screen  and (max-width:688px) {
+    .top-banner-container{
+        background-color:#161616;
+        width: 80%;
+        margin:auto;
+        /* height: 420px; */
+        border-radius: 30px;
+       padding: 0px; 
+          }
+    .top-banner{
+        flex-direction: column;
+        width: 85%;
+        margin:5% 5%;
+        padding: 10px 10px 0 10px;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    .banner-content{
+        width: 80%;
+        padding: 0%;
+        text-align: center; 
+    }
+    .banner-title{
+        font-size: 30px;
+        
+    }
+    .banner-paragraph{
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: black;
+        margin-bottom: 30px;
+    }
+    /* .banner-img{
+        margin-top: 60px;
+    } */
+    .banner-img >img{
+        margin-top: 50px;
+       }
+    .blog-container{
+        display: flex;
+        flex-direction: column;  
+    }
+    .navigation-buttons{
+        width:100%;
+        /* height: 200px; */
+        border-radius: 10px;
+        padding: 0%;
+        margin-bottom: 40px;
+        background-color: #FFFFFF;
+    }
+    .nav-links-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: 0;
     }
     .nav-links{
@@ -306,10 +380,18 @@ Media Query  for tablet veiw
         margin-left: 0;
     }
     .grid-container{
-        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center  !important; 
+        align-items: center;
+        border: 1px solid red;
     }
     .players-blog{
+        flex-grow: 0;
         margin-left: 0;
+        justify-content: center;
+        border: 1px solid green;
+
     }
     .hidden-button{
         display: block;
