@@ -316,23 +316,20 @@ Media Query  for tablet veiw end
 /* -----------------------------------
 Media Query  for Mobile veiw
 ---------------------------------*/
-@media screen  and (max-width:688px) {
+@media screen  and (max-width:480px) {
     .top-banner-container{
-        background-color:#161616;
-        width: 80%;
-        margin:auto;
-        /* height: 420px; */
-        border-radius: 30px;
-       padding: 0px; 
-          }
+    background-color:#161616;
+    height: 600px;
+    margin: 5%;
+    /* height: 420px; */
+    border-radius: 20px;
+    padding: 0px; 
+    }
     .top-banner{
+        height: 100%;
         flex-direction: column;
-        width: 85%;
-        margin:5% 5%;
-        padding: 10px 10px 0 10px;
-       justify-content: center;
-       align-items: center;
-       
+        justify-content: space-evenly;
+         margin-left: 4%; 
     }
     .banner-content{
         width: 80%;
@@ -340,8 +337,7 @@ Media Query  for Mobile veiw
         text-align: center; 
     }
     .banner-title{
-        font-size: 30px;
-        
+        font-size: 25px;
     }
     .banner-paragraph{
         white-space: nowrap;
@@ -351,26 +347,29 @@ Media Query  for Mobile veiw
         background-color: black;
         margin-bottom: 30px;
     }
-    /* .banner-img{
-        margin-top: 60px;
-    } */
     .banner-img >img{
-        margin-top: 50px;
+    margin-top:-22px;
        }
+    .blog-section{
+        margin-top: 40px;
+    }
     .blog-container{
         display: flex;
         flex-direction: column;  
+        justify-content: space-evenly;
+        align-items: center;
     }
     .navigation-buttons{
         width:100%;
         /* height: 200px; */
         border-radius: 10px;
         padding: 0%;
-        margin-bottom: 40px;
         background-color: #FFFFFF;
+        margin-bottom: 40px;
     }
     .nav-links-container{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 0;
@@ -384,21 +383,23 @@ Media Query  for Mobile veiw
         grid-template-columns: repeat(1,1fr);
         justify-content: center  !important; 
         align-items: center;
-        border: 1px solid red;
     }
     .players-blog{
-        flex-grow: 0;
+        margin-top: 90px;
         margin-left: 0;
         justify-content: center;
-        border: 1px solid green;
-
     }
     .hidden-button{
-        display: block;
+        display: none;
     }
     .footer-terms{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        align-self:center;
     }
 }
+/* -----------------------------------
+Media Query  for Mobile veiw-ends
+---------------------------------*/
