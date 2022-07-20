@@ -92,7 +92,7 @@ players blog section styles
     border-radius: 10px;
     text-align: center;
 }
-#blog-focus{
+.focused-link{
     background-color: #DD0000;
    color: #FFFFFF;
 }
